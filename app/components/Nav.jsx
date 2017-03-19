@@ -15,18 +15,18 @@ var Nav = React.createClass({
           <ul className="menu">
             <li className="menu-text">React Weer App</li>
             <li>
-              <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
+              <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Zoek weer</IndexLink>
             </li>
             <li>
-              <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
+              <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Over</Link>
             </li>
             <li>
-              <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
+              <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Voorbeelden</Link>
             </li>
           </ul>
         </div>
         <div className="top-bar-right">
-          <form onSumbit={this.onSearch}>
+          <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
                 <input type="search" placeholder="Zoek weer"/>
