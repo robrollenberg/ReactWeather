@@ -6,19 +6,21 @@ var WeatherForm = React.createClass({
 
       var location = this.refs.location.value;
 
-      if(location.length > 0) {
-        this.refs.location.value = '';
-        this.props.onSearch(location);
-      }
-    },
-    render: function () {
-        return (
-          <form onSubmit={this.onFormSubmit}>
-            <input type='text' ref="location"/>
-            <button>Get weather</button>
-          </form>
-        );
+    if (location.length > 0) {
+      this.refs.location.value = '';
+      this.props.onSearch(location);
     }
+  },
+  render: function () {
+    return (
+        <div>
+          <form onSubmit={this.onFormSubmit}>
+            <input type="text" ref="location"/>
+            <button>Get Weather</button>
+          </form>
+        </div>
+    );
+  }
 });
 
 module.exports = WeatherForm;

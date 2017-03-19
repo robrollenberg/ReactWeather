@@ -1,6 +1,6 @@
 var React = require('react');
 
-var About = function () {
+var About = (props) => {
   return (
     <div>
       <h3>About component</h3>
