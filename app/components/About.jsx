@@ -3,7 +3,21 @@ var React = require('react');
 var About = (props) => {
   return (
     <div>
-      <h3>About component</h3>
+      <h1 className="text-center">Over Zoek weer</h1>
+      <p>
+        Dit is een weer applicatie gebouwd in React.
+      </p>
+      <p>
+        Hier zijn enkele tools, welke gebruikt zijn:
+      </p>
+      <ul>
+        <li>
+          <a href="https://facebook.github.io/react">React</a> - Dit is het Javascript framework
+        </li>
+        <li>
+          <a href="http://openweathermap.org">Open Weather Map</a> - Dit is de Api welke gebruikt wordt om het weer te bepalen.
+        </li>
+      </ul>
     </div>
   )
 };
